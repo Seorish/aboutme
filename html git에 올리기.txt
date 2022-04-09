@@ -1,0 +1,127 @@
+git init 은 초기화하는 코드
+-> 한 레포지션에 한번만
+(master)가 떠있으면 안해도됨
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지)
+$ git init
+Initialized empty Git repository in C:/Users/이서진/Desktop/멋사/1. 스터디(자기소개페이지)/.git/
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git remote add origin https://github.com/Seorish/aboutme.git
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git remote -v
+origin  https://github.com/Seorish/aboutme.git (fetch)
+origin  https://github.com/Seorish/aboutme.git (push)
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ ls -a
+./  ../  .git/  .vscode/  aboutme.html  contact.html  css.css  img/  main.html  project.html  self.html
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git remote -v
+origin  https://github.com/Seorish/aboutme.git (fetch)
+origin  https://github.com/Seorish/aboutme.git (push)
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git stats
+git: 'stats' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vscode/
+        aboutme.html
+        contact.html
+        css.css
+        img/
+        main.html
+        project.html
+        self.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git add .
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .vscode/launch.json
+        new file:   aboutme.html
+        new file:   contact.html
+        new file:   css.css
+        new file:   img/birthday-cake.png
+        new file:   img/blogging.png
+        new file:   img/desktop.png
+        new file:   img/email.png
+        new file:   img/female.png
+        new file:   img/github.png
+        new file:   img/home.png
+        new file:   img/instagram.png
+        new file:   img/page.png
+        new file:   img/puzzle.png
+        new file:   main.html
+        new file:   project.html
+        new file:   self.html
+
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git commit -m "올리겠음"
+[master (root-commit) 5d6f1da] 올리겠음
+ 17 files changed, 236 insertions(+)
+ create mode 100644 .vscode/launch.json
+ create mode 100644 aboutme.html
+ create mode 100644 contact.html
+ create mode 100644 css.css
+ create mode 100644 img/birthday-cake.png
+ create mode 100644 img/blogging.png
+ create mode 100644 img/desktop.png
+ create mode 100644 img/email.png
+ create mode 100644 img/female.png
+ create mode 100644 img/github.png
+ create mode 100644 img/home.png
+ create mode 100644 img/instagram.png
+ create mode 100644 img/page.png
+ create mode 100644 img/puzzle.png
+ create mode 100644 main.html
+ create mode 100644 project.html
+ create mode 100644 self.html
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git remote -v
+origin  https://github.com/Seorish/aboutme.git (fetch)
+origin  https://github.com/Seorish/aboutme.git (push)
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$ git push origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (21/21), 220.98 KiB | 5.97 MiB/s, done.
+Total 21 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Seorish/aboutme.git
+ * [new branch]      master -> master
+
+이서진@DESKTOP-LQ8KJHT MINGW64 ~/Desktop/멋사/1. 스터디(자기소개페이지) (master)
+$
